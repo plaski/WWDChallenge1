@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>FORMS</title>
+</head>
+<body>
+	<header class="header">
+		<img src="../images/logo.png" alt="Master Lab Logo" class="header__logo">
+	</header>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<form class="form">
+						<fieldset class="form__fieldset">
+							<legend class="form__legend">Register Form</legend>
+							<div class="form__input-container"><input type="text" id="username" class="form__input" placeholder="Username" required="required"></div>
+							<div class="form__input-container"><input type="password" id="password" class="form__input form__input--password" placeholder="Password" required="required"></div>
+							<div class="form__input-container"><input type="password" id="confirm-password" class="form__input form__input--password" placeholder="Confirm Password" required="required"></div>
+							<div class="form__input-container"><input type="email" id="email" class="form__input form__input--email" placeholder="Email" required="required"></div>
+							<div class="form__input-container">
+								<select id="location" class="form__input form__input--select">
+									<option disabled selected hidden>Your Location</option>
+									<option value="europe">Europe</option>
+									<option value="asia">Asia</option>
+									<option value="africa">Africa</option>
+								</select>
+							</div>
+							<div class="form__checkbox-container">
+								<input type="checkbox" id="terms" class="form__checkbox" value="true" hidden>
+								<label class="form__checkbox__label" for="terms">
+									<span class="form__checkbox__span"></span>
+									<p class="form__checkbox__text">I have read and accept the terms of use.</p>
+								</label>
+							</div>
+							<button class="form__button">Sign up</button>
+						</fieldset>
+					</form>
+					<form class="form">
+						<fieldset class="form__fieldset form__fieldset--send">
+							<legend class="form__legend">Send Email</legend>
+							<div class="form__input-container"><input type="text" id="name" class="form__input" placeholder="Your Name" required="required"></div>
+							<div class="form__input-container"><input type="email" id="email" class="form__input form__input--email" placeholder="Email" required="required"></div>
+							<textarea id="message" class="form__textarea" placeholder="Type your message ..." required="required"></textarea>
+							<div class="form__checkbox-container">
+								<input type="checkbox" id="send-copy" class="form__checkbox" value="true" hidden>
+								<label class="form__checkbox__label" for="send-copy">
+									<span class="form__checkbox__span"></span>
+									<p class="form__checkbox__text">Send a copy to my Email</p>
+								</label>
+							</div>
+							<button class="form__button">Send Email</button>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col">
+					<form class="form">
+						<fieldset class="form__fieldset form__fieldset--signin">
+							<legend class="form__legend">Sign In Form</legend>
+							<div class="form__input-container"><input type="text" id="username" class="form__input" placeholder="Username" required="required"></div>
+							<div class="form__input-container"><input type="password" id="password" class="form__input form__input--password" placeholder="Password" required="required"></div>
+							<div class="form__checkbox-container form__checkbox-container--signin">
+								<input type="checkbox" id="rememberme" class="form__checkbox" value="true" hidden>
+								<label class="form__checkbox__label" for="rememberme">
+									<span class="form__checkbox__span"></span>
+									<p class="form__checkbox__text">Remember me</p>
+								</label>
+							</div>
+							<button class="form__button form__button--signin">Sign in</button>
+						</fieldset>
+					</form>
+					<form class="form">
+						<fieldset class="form__fieldset form__fieldset--recovery">
+							<legend class="form__legend">Recovery Form</legend>
+							<div class="form__input-container"><input type="email" id="email" class="form__input form__input--email" placeholder="Enter your Email" required="required"></div>
+							<div class="form__input-container"><input type="tel" id="tel" class="form__input form__input--phone" placeholder="Enter your Phone number" required="required"></div>
+							<button class="form__button form__button--send">Send</button><button class="form__button form__button--done">Done</button>
+						</fieldset>
+					</form>
+					<form class="form">
+						<fieldset class="form__fieldset form__fieldset--subscribe">
+							<legend class="form__legend">Subscribe Form</legend>
+							<div class="form__input-container"><input type="email" id="email" class="form__input form__input--email" placeholder="Enter your Email" required="required"></div>
+							<button class="form__button form__button--send">Subscribe</button><button class="form__button form__button--no-thanks">No, Thanks</button>
+						</fieldset>
+					</form>
+					<footer class="footer">
+						<img src="../images/logo_bottom.png" alt="Master Lab Logo" class="header__logo footer__logo">
+					</footer>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

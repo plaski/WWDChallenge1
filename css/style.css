@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400&subset=latin-ext");
+/*fieldset-background-color*/
+/*legend-text-color*/
+/*input-border-color*/
+/*input-text-color*/
+/*gradient-start*/
+/*gradient-stop*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 996px;
+  margin: 0 auto; }
+
+.row:before, .row:after {
+  content: "";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+[class*="col"] {
+  float: left;
+  min-height: 1px; }
+
+.col {
+  width: 50%; }
+
+body {
+  background: #aaa url("../images/background.png") no-repeat center center;
+  background-size: cover;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 55px 0; }
+
+.header {
+  margin: 0 auto; }
+  .header__logo {
+    display: block;
+    margin: 0 auto;
+    opacity: 0.3; }
+
+.form {
+  width: 420px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  margin: 75px auto 0; }
+  .form__fieldset {
+    width: 100%;
+    height: 100%;
+    background: #F4F4F4;
+    border-radius: 3px;
+    border: none;
+    position: relative;
+    padding: 20px; }
+    .form__fieldset--send {
+      padding: 25px 20px; }
+    .form__fieldset--signin {
+      padding-top: 30px; }
+    .form__fieldset--recovery {
+      padding: 30px 20px; }
+    .form__fieldset--subscribe {
+      padding-top: 30px; }
+  .form__legend {
+    position: absolute;
+    top: -82px;
+    left: 85px;
+    color: #FFF;
+    text-shadow: 1px 2px 1px #000;
+    font-size: 2em; }
+  .form__input {
+    border: 1px solid #C6C6C6;
+    border-radius: 3px;
+    height: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #AFAFAF;
+    background: inherit;
+    padding-left: 80px;
+    font-size: 1em;
+    font-family: 'Titillium Web', sans-serif;
+    background: url(../images/user.png) left 15px center no-repeat; }
+    .form__input--select {
+      margin-bottom: 12px;
+      background: url(../images/pin.png) left 15px center no-repeat; }
+    .form__input--password {
+      background: url(../images/password.png) left 15px center no-repeat; }
+    .form__input--email {
+      background: url(../images/envelope.png) left 15px center no-repeat; }
+    .form__input::-webkit-input-placeholder {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 16px; }
+    .form__input::-moz-placeholder {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 16px; }
+    .form__input:-ms-input-placeholder {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 16px; }
+    .form__input::placeholder {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 16px; }
+    .form__input-container {
+      position: relative; }
+      .form__input-container::before {
+        position: absolute;
+        content: '';
+        border-right: 1px solid #E4E4E4;
+        height: 30px;
+        left: 60px;
+        top: 5px; }
+    .form__input--phone {
+      background: url(../images/phone.png) left 15px center no-repeat; }
+  .form__button {
+    width: 100%;
+    height: 50px;
+    color: #FFF;
+    text-shadow: 1px 1px #000;
+    font-size: 1.5em;
+    background: -webkit-linear-gradient(top, #ADDB54, #7FC320);
+    background: linear-gradient(top, #ADDB54, #7FC320);
+    border: 1px solid #3B9A00;
+    border-radius: 3px; }
+    .form__button--signin {
+      height: 40px;
+      width: 40%;
+      margin-left: 50px; }
+    .form__button--send {
+      height: 40px;
+      width: 40%;
+      font-size: 1em;
+      width: 45%; }
+    .form__button--done {
+      height: 40px;
+      width: 40%;
+      opacity: 0.6;
+      font-size: 1em;
+      width: 45%;
+      float: right; }
+    .form__button--no-thanks {
+      height: 40px;
+      width: 40%;
+      font-size: 1em;
+      width: 45%;
+      float: right;
+      background: -webkit-linear-gradient(top, #F76E7E, #F03747);
+      background: linear-gradient(top, #F76E7E, #F03747); }
+  .form__checkbox-container {
+    margin-bottom: 12px; }
+    .form__checkbox-container--signin {
+      display: inline-block; }
+  .form__checkbox__label {
+    font-size: 1.125em;
+    color: #AFAFAF;
+    cursor: pointer;
+    height: auto;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+  .form__checkbox__span {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin: 0 9px -6px 0;
+    border: 1px solid #AFAFAF;
+    border-radius: 5px;
+    position: relative; }
+  .form__checkbox__text {
+    display: inline-block; }
+  .form__checkbox:checked ~ .form__checkbox__label > .form__checkbox__span::before {
+    content: '';
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    border-radius: 3px;
+    background: -webkit-linear-gradient(top, #ADDB54, #7FC320);
+    background: linear-gradient(top, #ADDB54, #7FC320);
+    top: 5px;
+    left: 5px; }
+  .form__textarea {
+    border-radius: 3px;
+    background-color: inherit;
+    width: 100%;
+    height: 230px;
+    border: 1px solid #C6C6C6;
+    color: #AFAFAF;
+    resize: none;
+    padding: 10px 15px; }
+    .form__textarea::-webkit-input-placeholder {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 16px; }
+    .form__textarea::-moz-placeholder {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 16px; }
+    .form__textarea:-ms-input-placeholder {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 16px; }
+    .form__textarea::placeholder {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 16px; }
+
+.footer {
+  width: 420px;
+  padding: 55px 0;
+  margin: 0 auto; }
+
+@media (max-width: 996px) {
+  .col {
+    width: 100%;
+    margin: auto; }
+
+  .header__logo {
+    height: 6em; } }

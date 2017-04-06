@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400&subset=latin-ext');
+
+
+$color-1: #F4F4F4; /*fieldset-background-color*/
+$color-2: #FFF; /*legend-text-color*/
+$color-3: #C6C6C6; /*input-border-color*/
+$color-4: #AFAFAF; /*input-text-color*/
+$color-5: #ADDB54;/*gradient-start*/
+$color-6: #7FC320;/*gradient-stop*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	max-width: 996px;
+	margin: 0 auto;
+}
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+[class*="col"] {
+	float: left;
+	min-height: 1px;
+}
+.col {
+	width: 50%;
+}
+body {
+	background: #aaa url('../images/background.png') no-repeat center center;
+	background-size: cover;
+	font-family: 'Titillium Web', sans-serif;
+	padding: 55px 0;
+
+}
+.header {
+	margin: 0 auto;
+
+	&__logo {
+		display: block;
+		margin: 0 auto;
+		opacity: 0.3;
+
+	}
+}
+.form {
+	width: 420px;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	margin: 75px auto 0;
+
+	&__fieldset {
+		width: 100%;
+		height: 100%;
+		background: $color-1;
+		border-radius: 3px;
+		border: none;
+		position: relative;
+		padding: 20px;
+
+		&--send {
+			padding: 25px 20px;
+		}
+
+		&--signin {
+			padding-top: 30px;
+		}
+
+		&--recovery {
+			padding: 30px 20px; 
+		}
+
+		&--subscribe {
+			padding-top: 30px;
+		}
+	}
+
+	&__legend {
+		position: absolute;
+		top: -82px;
+		left: 85px;
+		color: $color-2;
+		text-shadow: 1px 2px 1px #000;
+		font-size: 2em;
+	}
+
+	&__input {
+		border: 1px solid $color-3;
+		border-radius: 3px;
+		height: 40px;
+		margin-bottom: 20px;
+		width: 100%;
+		color: $color-4;
+		background: inherit;
+		padding-left: 80px;
+		font-size: 1em;
+		font-family: 'Titillium Web', sans-serif;
+		background: url(../images/user.png) left 15px center no-repeat;
+
+		&--select {
+			margin-bottom: 12px;
+			background: url(../images/pin.png) left 15px center no-repeat;
+		}
+
+		&--password {
+			background: url(../images/password.png) left 15px center no-repeat;
+		}
+
+		&--email {
+			background: url(../images/envelope.png) left 15px center no-repeat;
+		}
+
+		&::placeholder {
+			font-family: 'Titillium Web', sans-serif;
+			font-size: 16px;
+		}
+
+		&-container {
+			position: relative;
+
+			&::before {
+				position: absolute;
+				content: '';
+				border-right: 1px solid #E4E4E4;
+				height: 30px;
+				left: 60px;
+				top: 5px;
+			}
+		}
+
+		&--phone {
+			background: url(../images/phone.png) left 15px center no-repeat;
+		}
+	}
+
+	&__button {
+		width: 100%;
+		height: 50px;
+		color: $color-2;
+		text-shadow: 1px 1px #000;
+		font-size: 1.5em;
+		background: linear-gradient(top, $color-5, $color-6);
+		border: 1px solid #3B9A00;
+		border-radius: 3px;
+
+		&--signin {
+			height: 40px;
+			width: 40%;
+			margin-left: 50px;
+		}
+
+		&--send {
+			height: 40px;
+			width: 40%;
+			font-size: 1em;
+			width: 45%;
+		}
+
+		&--done {
+			height: 40px;
+			width: 40%;
+			opacity: 0.6;
+			font-size: 1em;
+			width: 45%;
+			float: right;
+		}
+
+		&--no-thanks{
+			height: 40px;
+			width: 40%;
+			font-size: 1em;
+			width: 45%;
+			float: right;
+			background: linear-gradient(top, #F76E7E, #F03747);
+		}
+	}
+
+	&__checkbox {
+
+		&-container {
+			margin-bottom: 12px;
+
+			&--signin {
+				display: inline-block;
+			}
+		}
+
+		&__label {
+			font-size: 1.125em;
+			color: $color-4;
+			cursor: pointer;
+			height: auto;
+			user-select: none;
+		}
+
+		&__span {
+			display: inline-block;
+			height: 25px;
+			width: 25px;
+			margin: 0 9px -6px 0;
+			border: 1px solid $color-4;
+			border-radius: 5px;
+			position: relative;
+		}
+
+		&__text {
+			display: inline-block;
+		}
+
+		&:checked ~ .form__checkbox__label > .form__checkbox__span::before {
+			content: '';
+			position: absolute;
+			height: 13px;
+			width: 13px;
+			border-radius: 3px;
+			background: linear-gradient(top, $color-5, $color-6);
+			top: 5px;
+			left: 5px;
+		};
+	}
+
+	&__textarea {
+		border-radius: 3px;
+		background-color: inherit;
+		width: 100%;
+		height: 230px;
+		border: 1px solid $color-3;
+		color: $color-4;
+		resize: none;
+		padding: 10px 15px;
+
+		&::placeholder {
+			font-family: 'Titillium Web', sans-serif;
+			font-size: 16px;
+		}
+	}
+}
+
+.footer {
+	width: 420px;
+	padding: 55px 0;
+	margin: 0 auto;
+}
+
+
+@media (max-width: 996px) {
+	.col {
+		width: 100%;
+		margin: auto;
+	}
+	.header__logo {
+		height: 6em;
+	}
+}
