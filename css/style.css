@@ -205,6 +205,10 @@ body {
   width: 420px;
   padding: 55px 0;
   margin: 0 auto; }
+  .footer__logo {
+    display: block;
+    margin: 0 auto;
+    opacity: 0.3; }
 
 @media (max-width: 996px) {
   .col {
@@ -212,4 +216,23 @@ body {
     margin: auto; }
 
   .header__logo {
-    height: 6em; } }
+    height: 6em;
+    width: auto; }
+
+  .footer__logo {
+    height: 6em;
+    width: auto; } }
+@media (max-width: 440px) {
+  .header__logo {
+    height: 4em;
+    width: auto; }
+
+  .footer__logo {
+    height: 4em;
+    width: auto; }
+
+  .form {
+    width: 320px; }
+
+  .footer {
+    width: 320px; } }
