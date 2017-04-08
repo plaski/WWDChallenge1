@@ -34,7 +34,17 @@ module.exports = function(grunt) {
 	            }
 	        }
 	    }
-	},
+    },
+    imagemin: {
+      dynamic: {
+        files: [{
+            expand: true,
+            cwd: 'images/source',
+            src: ['**/*.{png,jpg,gif}'],
+            dest: 'images/'
+        }]
+      }
+    },
     watch: {
       css: {
         files: 'css/sass/*.scss',
@@ -46,5 +56,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-browser-sync');
-  grunt.registerTask('default',['browserSync', 'watch']);
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.registerTask('default',['browserSync', 'imagemin', 'watch']);
 }

@@ -89,6 +89,8 @@ body {
       background: url(../images/password.png) left 15px center no-repeat; }
     .form__input--email {
       background: url(../images/envelope.png) left 15px center no-repeat; }
+    .form__input--phone {
+      background: url(../images/phone.png) left 20px center no-repeat; }
     .form__input::-webkit-input-placeholder {
       font-family: 'Titillium Web', sans-serif;
       font-size: 1em; }
@@ -110,8 +112,6 @@ body {
         height: 30px;
         left: 60px;
         top: 5px; }
-    .form__input--phone {
-      background: url(../images/phone.png) left 15px center no-repeat; }
   .form__button {
     width: 100%;
     height: 50px;
