@@ -91,16 +91,16 @@ body {
       background: url(../images/envelope.png) left 15px center no-repeat; }
     .form__input::-webkit-input-placeholder {
       font-family: 'Titillium Web', sans-serif;
-      font-size: 16px; }
+      font-size: 1em; }
     .form__input::-moz-placeholder {
       font-family: 'Titillium Web', sans-serif;
-      font-size: 16px; }
+      font-size: 1em; }
     .form__input:-ms-input-placeholder {
       font-family: 'Titillium Web', sans-serif;
-      font-size: 16px; }
+      font-size: 1em; }
     .form__input::placeholder {
       font-family: 'Titillium Web', sans-serif;
-      font-size: 16px; }
+      font-size: 1em; }
     .form__input-container {
       position: relative; }
       .form__input-container::before {
@@ -190,16 +190,16 @@ body {
     padding: 10px 15px; }
     .form__textarea::-webkit-input-placeholder {
       font-family: 'Titillium Web', sans-serif;
-      font-size: 16px; }
+      font-size: 1em; }
     .form__textarea::-moz-placeholder {
       font-family: 'Titillium Web', sans-serif;
-      font-size: 16px; }
+      font-size: 1em; }
     .form__textarea:-ms-input-placeholder {
       font-family: 'Titillium Web', sans-serif;
-      font-size: 16px; }
+      font-size: 1em; }
     .form__textarea::placeholder {
       font-family: 'Titillium Web', sans-serif;
-      font-size: 16px; }
+      font-size: 1em; }
 
 .footer {
   width: 420px;
@@ -223,6 +223,9 @@ body {
     height: 6em;
     width: auto; } }
 @media (max-width: 440px) {
+  body {
+    font-size: 12px; }
+
   .header__logo {
     height: 4em;
     width: auto; }
@@ -232,7 +235,9 @@ body {
     width: auto; }
 
   .form {
-    width: 320px; }
+    min-width: 300px;
+    width: 100%; }
 
   .footer {
-    width: 320px; } }
+    min-width: 300px;
+    width: 100%; } }
