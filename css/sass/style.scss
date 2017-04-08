@@ -150,7 +150,7 @@ body {
 		&--signin {
 			height: 40px;
 			width: 40%;
-			margin-left: 50px;
+			float: right;
 		}
 
 		&--send {
@@ -209,6 +209,7 @@ body {
 
 		&__text {
 			display: inline-block;
+			line-height: 40px;/*poprawic tylko dla jednego guzika, albo ogarnac marigines dolny dla nich*/
 		}
 
 		&:checked ~ .form__checkbox__label > .form__checkbox__span::before {
@@ -232,10 +233,10 @@ body {
 		color: $color-4;
 		resize: none;
 		padding: 10px 15px;
+		font-size: 1em;
 
 		&::placeholder {
 			font-family: 'Titillium Web', sans-serif;
-			font-size: 1em;
 		}
 	}
 }
@@ -286,9 +287,23 @@ body {
 	 	min-width: 300px;
 	 	width: 100%;
 
-	 	&__legend {
+	 	&__button {
 
+	 		&--signin {
+	 			
+	 		}
 	 	}
+
+	 	&__checkbox {
+
+	 		&-container {
+	 			margin-bottom: 0;
+	 		}
+
+			&__text {
+		 		font-size: 0.9375em;
+		 	}
+		}
 	}
 	.footer {
 	 	min-width: 300px;

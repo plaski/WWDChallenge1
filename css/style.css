@@ -125,7 +125,7 @@ body {
     .form__button--signin {
       height: 40px;
       width: 40%;
-      margin-left: 50px; }
+      float: right; }
     .form__button--send {
       height: 40px;
       width: 40%;
@@ -168,7 +168,9 @@ body {
     border-radius: 5px;
     position: relative; }
   .form__checkbox__text {
-    display: inline-block; }
+    display: inline-block;
+    line-height: 40px;
+    /*poprawic tylko dla jednego guzika, albo ogarnac marigines dolny dla nich*/ }
   .form__checkbox:checked ~ .form__checkbox__label > .form__checkbox__span::before {
     content: '';
     position: absolute;
@@ -187,19 +189,16 @@ body {
     border: 1px solid #C6C6C6;
     color: #AFAFAF;
     resize: none;
-    padding: 10px 15px; }
+    padding: 10px 15px;
+    font-size: 1em; }
     .form__textarea::-webkit-input-placeholder {
-      font-family: 'Titillium Web', sans-serif;
-      font-size: 1em; }
+      font-family: 'Titillium Web', sans-serif; }
     .form__textarea::-moz-placeholder {
-      font-family: 'Titillium Web', sans-serif;
-      font-size: 1em; }
+      font-family: 'Titillium Web', sans-serif; }
     .form__textarea:-ms-input-placeholder {
-      font-family: 'Titillium Web', sans-serif;
-      font-size: 1em; }
+      font-family: 'Titillium Web', sans-serif; }
     .form__textarea::placeholder {
-      font-family: 'Titillium Web', sans-serif;
-      font-size: 1em; }
+      font-family: 'Titillium Web', sans-serif; }
 
 .footer {
   width: 420px;
@@ -237,6 +236,10 @@ body {
   .form {
     min-width: 300px;
     width: 100%; }
+    .form__checkbox-container {
+      margin-bottom: 0; }
+    .form__checkbox__text {
+      font-size: 0.9375em; }
 
   .footer {
     min-width: 300px;
