@@ -192,13 +192,17 @@ body {
     padding: 10px 15px;
     font-size: 1em; }
     .form__textarea::-webkit-input-placeholder {
-      font-family: 'Titillium Web', sans-serif; }
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 1em; }
     .form__textarea::-moz-placeholder {
-      font-family: 'Titillium Web', sans-serif; }
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 1em; }
     .form__textarea:-ms-input-placeholder {
-      font-family: 'Titillium Web', sans-serif; }
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 1em; }
     .form__textarea::placeholder {
-      font-family: 'Titillium Web', sans-serif; }
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 1em; }
 
 .footer {
   width: 420px;
